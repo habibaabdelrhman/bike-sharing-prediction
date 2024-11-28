@@ -64,35 +64,64 @@ requirements.txt: List of Python dependencies for the project. This is the file 
 
 bike-sharing-prediction/                 # Root project directory
 │
+
 ├── app/                                 # Application package
+
 │   ├── __init__.py                      # Initialize app, configure extensions (Flask, MLflow, etc.)
+
 │   ├── models.py                        # SQLAlchemy models for database tables
+
 │   ├── forms.py                         # Flask-WTF forms for validation
+
 │   ├── routes.py                        # Application routes (views)
+
 │   ├── static/                          # Static files (CSS, JS, images)
+
 │   │   ├── css/                         # CSS files
+
 │   │   ├── js/                          # JavaScript files
+
 │   │   └── img/                         # Images
+
 │   └── templates/                       # Jinja2 templates (HTML files)
+
 │       ├── layout.html                  # Base layout template
+
 │       ├── home.html                    # Home page
+
 │       ├── customers.html               # Customers page
+
 │       └── dataframes.html              # Data display page
+
 │
 ├── database/                            # Database-related files
+
 │   └── bike_sharing.db                  # SQLite database file (if using SQLite)
+
 │
+
 ├── mlflow_models/                       # Folder for storing MLflow models
+
 │   └── deployed_model/                  # Subfolder for models deployed via MLflow
+
 │       └── model_v1                     # Example model version folder
+
 │
+
 ├── .git/                                # Git configuration files (auto-generated when you run `git init`)
+
 ├── .gitignore                           # Files/folders to ignore in Git
+
 ├── requirements.txt                     # Python dependencies
+
 ├── config.py                            # Configuration file for app (database URI, MLflow config, etc.)
+
 ├── run.py                               # Main entry point for the application
+
 ├── Dockerfile                           # If using Docker to containerize the app
+
 └── README.md                            # Project documentation (usage, setup, etc.)
+
 
 
 ### **Final Outputs of the Project:**
