@@ -61,11 +61,11 @@ database/: This folder stores your SQLite database or any database-related files
 mlflow_models/: Folder for storing models that are deployed through MLflow. Each version of a model will have its own subfolder.
 migrations/: If you use Flask-Migrate to handle database migrations, this folder will contain the migration scripts.
 requirements.txt: List of Python dependencies for the project. This is the file you’ll use to install all the required libraries.
-
+''
 bike-sharing-prediction/                 # Root project directory
 │
 ├── app/                                 # Application package
-│   ├── __init__.py                      # Initialize app, configure extensions (Flask, MLflow, etc.)
+│   ├── __init__.py                      # Initialize app, configure extensions 
 │   ├── models.py                        # SQLAlchemy models for database tables
 │   ├── forms.py                         # Flask-WTF forms for validation
 │   ├── routes.py                        # Application routes (views)
@@ -73,7 +73,7 @@ bike-sharing-prediction/                 # Root project directory
 │   │   ├── css/                         # CSS files
 │   │   ├── js/                          # JavaScript files
 │   │   └── img/                         # Images
-│   └── templates/                       # Jinja2 templates (HTML files)
+│   └── templates/                       # Jinja2 templates 
 │       ├── layout.html                  # Base layout template
 │       ├── home.html                    # Home page
 │       ├── customers.html               # Customers page
@@ -88,11 +88,11 @@ bike-sharing-prediction/                 # Root project directory
 
 ├── .gitignore                           # Files/folders to ignore in Git
 ├── requirements.txt                     # Python dependencies
-├── config.py                            # Configuration file for app (database URI, MLflow config, etc.)
+├── config.py                            # Configuration file for app 
 ├── run.py                               # Main entry point for the application
 ├── Dockerfile                           # If using Docker to containerize the app
-└── README.md                            # Project documentation (usage, setup, etc.)
-
+└── README.md                            # Project documentation 
+''
 
 
 
