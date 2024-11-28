@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/walee/Downloads/Depi/Depi/mlruns/110416581568753256/b04c0fd3e4db44c89c1f57a2f954d7e6/artifacts
+end_time: 1732567095038
+entry_point_name: ''
+experiment_id: '110416581568753256'
+lifecycle_stage: active
+run_id: b04c0fd3e4db44c89c1f57a2f954d7e6
+run_name: aged-lamb-200
+run_uuid: b04c0fd3e4db44c89c1f57a2f954d7e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732567086322
+status: 3
+tags: []
+user_id: Habiba

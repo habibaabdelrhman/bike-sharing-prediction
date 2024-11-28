@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Customer List</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+<form method="GET" action="/customers">
+    <div class="input-group mb-3">
+        <input type="text" name="search" class="form-control" placeholder="Search by name or email">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+ </form>
+ {% extends 'base.html' %}
+{% block content %}
+<h2>Customer List</h2>
+<form class="d-flex mb-3" method="get" action="/customers">
+    <input class="form-control me-2" type="search" placeholder="Search by name or email" name="search" value="{{ request.args.get('search', '') }}">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone }}</td>
+            <td>
+                <a href="/edit_customer/{{ customer.id }}" class="btn btn-warning btn-sm">Edit</a>
+                <form method="post" action="/delete_customer/{{ customer.id }}" style="display: inline;">
+                    <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

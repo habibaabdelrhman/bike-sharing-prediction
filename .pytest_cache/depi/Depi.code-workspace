@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Depi",
+			"path": "."
+		}
+	],
+	"settings": {
+		"cmake.options.advanced": {
+			"build": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			},
+			"launch": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			},
+			"debug": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"cmake.options.advanced": {
+			"build": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			},
+			"launch": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			},
+			"debug": {
+				"statusBarVisibility": "inherit",
+				"inheritDefault": "visible"
+			}
+		},
+		"editor.defaultFoldingRangeProvider": "ms-python.debugpy",
+		"editor.defaultFormatter": "ms-python.python"
+	}
+}
