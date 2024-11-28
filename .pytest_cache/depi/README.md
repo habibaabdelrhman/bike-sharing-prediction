@@ -61,7 +61,7 @@ database/: This folder stores your SQLite database or any database-related files
 mlflow_models/: Folder for storing models that are deployed through MLflow. Each version of a model will have its own subfolder.
 migrations/: If you use Flask-Migrate to handle database migrations, this folder will contain the migration scripts.
 requirements.txt: List of Python dependencies for the project. This is the file you’ll use to install all the required libraries.
-''
+```
 bike-sharing-prediction/                 # Root project directory
 │
 ├── app/                                 # Application package
@@ -83,17 +83,15 @@ bike-sharing-prediction/                 # Root project directory
 │   └── bike_sharing.db                  # SQLite database file (if using SQLite)
 │
 ├── mlflow_models/                       # Folder for storing MLflow models
-│   └── deployed_model/                  # Subfolder for models deployed via MLflow
-│       └── model_v1                     # Example model version folder
+│   └── deployed_model/                  # Subfolder for models deployed via MLfl
 
 ├── .gitignore                           # Files/folders to ignore in Git
 ├── requirements.txt                     # Python dependencies
 ├── config.py                            # Configuration file for app 
 ├── run.py                               # Main entry point for the application
-├── Dockerfile                           # If using Docker to containerize the app
 └── README.md                            # Project documentation 
 ''
-
+```
 
 
 ### **Final Outputs of the Project:**
